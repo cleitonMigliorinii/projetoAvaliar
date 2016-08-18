@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+::-webkit-input-placeholder {
+   color: white;
+}
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.page_login {
+    overflow: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: #049fb3;
+    color: #fff;
+    padding: 3em;
+    position: relative;
+}
+.page_login:before {
+    content: '';
+    background-color: rgba(255, 255, 255, .15);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 35%;
+    border-right: solid 120px #049fb3;
+}
+.page_login .img-container {
+    text-align: right;
+    width: 40%;
+    position: relative;
+}
+.page_login .img-container, .page_login .form-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px;
+}
+.pull-right {
+    float: right!important;
+}
+.text-center {
+    text-align: center;
+}
+.page_login .user-avatar {
+    max-width: 230px;
+    width: 100%;
+    border: 3px solid #fff;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.page_login h1 {
+    font-weight: 700;
+    line-height: 32px;
+    font-size: 34px;
+}
+#code:focus {
+    zoom: 1.1;
+    border: solid 1px #057584;
+}
+img {
+    vertical-align: middle;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+.container-img:hover {
+    zoom: 1.05;
+    -webkit-animation: rodaroda 2s linear alternate 3;
+    -moz-animation: rodaroda 2s linear;
+    -o-animation: rodaroda 2s linear;
+    animation: rodaroda 2s linear;
+}
+@-webkit-keyframes rodaroda {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+.page_login .form-content .pro-link a {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: 600;
+}
+.page_login .form-content {
+    position: relative;
+}
+.page_login .form-content .bottom-75 {
+    margin-bottom: 75px;
+    max-width: 400px;
+}
+.page_login .form-content .table-form {
+    display: table;
+    width: 100%;
+}
+.page_login .form-content .table-form .form-groups {
+    display: table-cell;
+    vertical-align: middle;
+}
+.page_login .form-group {
+    padding: 8px 0;
+    margin-bottom: 0;
+}
+.page_login .form-content .form-control {
+    background: #25a0b1;
+    border-color: #187582;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: 800;
+}
+.page_login .form-content .input-lg {
+    border-radius: 0;
+}
+.input-lg {
+    height: 46px !important;
+    padding: 10px 16px !important;
+    font-size: 18px !important;
+    line-height: 1.3333333;
+}
+.form-control {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+output, .form-control {
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.form-group button {
+    width: 100%;
+    height: 46px;
+    font-size: 22px;
+    border: solid 6px #078b9c;
+    background-color: #078b9c;
+    vertical-align: middle;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.form-group button:hover {
+    zoom: 1.1;
+    border: solid 1px #057584;
+}
+
+
+@media (max-width: 768px){
+.page_login {
+    padding: 15px;
+}
+
+.page_login, .img-content, .form-content {
+    display: block!important;
+}
+
+.page_login:before {
+    content: '';
+    background-color: rgba(255,255,255,.15);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    border-right: none;
+}
+
+.img-container .pull-right {
+    float: none!important;
+}
+
+.img-container .img-responsive {
+    display: initial;
+}
+
+.pro-link {
+    display: none!important;
+}
+
+.page_login .form-content .bottom-75 {
+    margin: 0 auto;
+}
